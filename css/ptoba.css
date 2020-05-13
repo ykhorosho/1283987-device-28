@@ -1,0 +1,431 @@
+    body {
+        margin: 0;
+        padding: 0;
+      
+        font-family: "Gilroy";
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 800;
+        color: #000000;
+        
+
+        background-color: #F2F2F2;
+        background-position: top center;
+        background-repeat: no-repeat;
+      }
+
+      a {
+        text-decoration: none;
+      }  /*отменим у ссылок подчеркивание */
+
+      .main-navigation {
+      
+        width: 1160px;
+        height: 299px: 
+        background: #F0C52E;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+      }    /*остили самой навигации */
+
+.site-navigation,
+.user-navigation, 
+.parameters{
+  list-style: none;
+}  /* Отменим точки у списка*/
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;;
+} /*По умолчанию ссылки имеют отдельный цвет, который выделяет их на странице.  псевдоклассы. :hover для наведения, :focus для фокусировки.
+Зададим эти состояния ссылкам в навигации.
+*/
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #242424;
+} /*интерактивные элементы страницы. */
+
+
+.features-list {
+  list-style: none;
+} /*Отменим дефолтные стили ненумерованного списка.*/
+
+.slider-1 {
+  position: absolute;
+width: 384px;
+height: 486px;
+left: 230px;
+top: 228px;
+}
+
+.logo-01{
+  position: absolute;
+width: 316.24px;
+height: 180px;
+left: 935.76px;
+top: 188px;
+}
+
+.advertising{
+  position: absolute;
+width: 478.01px;
+height: 114.61px;
+left: 739px;
+top: 306.39px;
+
+font-family: Gilroy;
+font-style: normal;
+font-weight: 800;
+font-size: 47px;
+line-height: 56px;
+}
+
+.advertising-item{
+  position: absolute;
+  width: 509px;
+  height: 63.5px;
+  left: 739px;
+  top: 437.5px;
+  
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  /* or 200% */
+  
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.15px;
+  
+  color: #464646;
+}
+
+.button-more {
+  position: absolute;
+width: 183.15px;
+height: 24px;
+left: 757.93px;
+top: 549.21px;
+
+font-family: Gilroy;
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 24px;
+/* identical to box height, or 133% */
+
+text-align: center;
+letter-spacing: 3.5px;
+text-transform: uppercase;
+
+color: #000000;
+}
+.more{
+  position: absolute;
+width: 78px;
+height: 12px;
+left: 1139px;
+top: 555px;
+} /* три точки*/
+
+.parameters-description{
+  font-family: Gilroy;
+font-style: normal;
+font-weight: 300;
+font-size: 36px;
+line-height: 48px;
+/* identical to box height, or 133% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.36px;
+
+color: #000000;
+}
+.parameters-size{
+  position: absolute;
+width: 109px;
+height: 48px;
+left: 740px;
+top: 630px;
+
+}
+
+.size{
+  position: absolute;
+width: 108px;
+height: 20px;
+left: 740px;
+top: 685.5px;
+}
+
+.parameters-weight{
+  position: absolute;
+  width: 91px;
+  height: 48px;
+  left: 899px;
+  top: 630px;
+  
+}
+
+.weight {
+  position: absolute;
+width: 90px;
+height: 20px;
+left: 899px;
+top: 685.5px;
+}
+
+.parameters-material{
+  position: absolute;
+width: 154px;
+height: 48px;
+left: 1038px;
+top: 630px;
+
+}
+
+.material {
+  position: absolute;
+width: 90px;
+height: 20px;
+left: 1040px;
+top: 685.5px;
+}
+
+.parameters-option{
+  font-family: Open Sans;
+font-style: normal;
+font-weight: 300;
+font-size: 13px;
+line-height: 20px;
+/* identical to box height, or 154% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.13px;
+
+color: #464646;
+}
+
+.columns{
+  font-family: Gilroy;
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 24px;
+background-repeat: repeat;
+
+} 
+
+.columns-one {
+  position: absolute;
+width: 160px;
+height: 160px;
+left: 540px;
+top: 820px;
+
+background: #F0C52E;
+}
+
+
+.columns-two{
+  position: absolute;
+width: 160px;
+height: 160px;
+left: 340px;
+top: 820px;
+
+background: #F0C52E;
+}
+
+.columns-three{
+  position: absolute;
+width: 160px;
+height: 160px;
+left: 540px;
+top: 820px;
+
+background: #F0C52E;
+}
+
+.columns-four{
+  position: absolute;
+width: 160px;
+height: 160px;
+left: 740px;
+top: 820px;
+
+background: #F0C52E;
+}
+
+.columns-five{
+
+position: absolute;
+width: 160px;
+height: 160px;
+left: 940px;
+top: 820px;
+
+background: #F0C52E;
+}
+
+.columns-six{
+
+position: absolute;
+width: 160px;
+height: 160px;
+left: 1140px;
+top: 820px;
+
+background: #F0C52E;
+}
+
+.opportunities{
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+}
+
+.delivery{
+  position: absolute;
+width: 172.15px;
+height: 24px;
+left: 133.93px;
+top: 1230.21px;
+color: #F7E184;
+}
+
+.guarantee{
+  position: absolute;
+width: 160.15px;
+height: 24px;
+left: 139.93px;
+top: 1294.21px;
+
+}
+
+.credit{
+  position: absolute;
+width: 134.15px;
+height: 24px;
+left: 151.93px;
+top: 1359.21px;
+}
+
+.opportunities h2 {
+  position: absolute;
+  width: 284.64px;
+  height: 48px;
+  left: 541px;
+  top: 1209.78px;
+  font-family: Gilroy;
+font-style: normal;
+font-weight: 800;
+font-size: 47px;
+line-height: 48px;
+/* identical to box height, or 102% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.208444px;
+
+color: #000000;
+}
+
+.opportunities p {
+
+  position: absolute;
+  width: 456px;
+  height: 90px;
+  left: 540px;
+  top: 1285.5px;
+  
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  /* or 200% */
+  
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.15px;
+  
+  color: #464646;
+}
+
+.partners-1 {
+  position: absolute;
+  width: 260px;
+  height: 100px;
+  left: 140px;
+  top: 1624px;
+
+}
+
+.partners-2 {
+  position: absolute;
+  width: 260px;
+  height: 100px;
+  left: 440px;
+  top: 1624px;  
+}
+
+.partners-3 {
+  position: absolute;
+  width: 260px;
+  height: 100px;
+  left: 740px;
+  top: 1624px;
+}
+
+.partners-4 {
+  position: absolute;
+  width: 260px;
+  height: 100px;
+  left: 1037px;
+  top: 1624px;
+  
+}
+
+.info {
+  font-family: Open Sans;
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 30px;
+
+position: absolute;
+width: 477px;
+height: 214px;
+left: 139px;
+top: 1960px;
+}
+
+.cooperation {
+  position: absolute;
+width: 477px;
+height: 204px;
+left: 147px;
+top: 2175px;
+
+font-family: Gilroy;
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 40px;
+/* or 250% */
+
+
+color: #000000;
+
+}
