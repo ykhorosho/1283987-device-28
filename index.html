@@ -2,191 +2,180 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title> 
+    <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  
+
   <body>
     <header class="main-header">
-       <nav class="main-navigation"> 
-        <div class="logo">       
-           <a>
-        <img src="img/logo.png" width="164" height="36" alt="Логотип магазина «Device»">
-        </a>
+       <nav class="main-navigation">
+        <div class="logo">
+          <a>
+            <img src="img/logo.png" width="164" height="36" alt="Логотип магазина «Device»">
+          </a>
         </div>
-      <ul class="user-navigation">
-        <li class="search">
-          <label for="search-site"><img class="search-icon" src="img/search.svg" width="16" height="16" alt="Поиск по сайту"></label>
-           <input class="serch-input" id="search-site" type="search" name="search" placeholder="Поиск по сайту">
-         </li>
-         <li class="enter">
-          <img class="enter-icon" src="img/user.svg" width="13" height="12" alt="Войти">
-          <button type="button">Войти</button>
-         </li>
-         <li class="compare">
-          <img class="compare-icon" src="img/compare.svg" width="10" height="10" alt="Сравнить">
-          <button type="button"> Сравнить</button>
-         </li>
-         <li class="basket">
-          <img class="basket-icon" src="img/cart.svg" width="12" height="12" alt="Корзина">
-          <button type="button">Корзина</button>
-         </li>
-      </ul>
-
-      <ul class="site-navigation">
-        <li class="catalog-goods"><a href="catalog.html">Каталог товаров
-          <img class="catalog-goods-img" src="img/plus.svg" width="16" height="16" alt="Каталог товаров"></a></li>
-        <li class="catalog-goods-one"><a href="#">Доставка</a></li>
-        <li class="catalog-goods-two"><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
+        <ul class="user-navigation">
+          <li class="search">
+            <label for="search-site"><img class="search-icon" src="img/search.svg" width="16" height="16" alt="Поиск по сайту"></label>
+            <input class="serch-input" id="search-site" type="search" name="search" placeholder="Поиск по сайту">
+          </li>
+          <li class="enter">
+            <img class="enter-icon" src="img/user.svg" width="13" height="12" alt="Войти">
+             <button type="button">Войти</button>
+          </li>
+          <li class="compare">
+            <img class="compare-icon" src="img/compare.svg" width="10" height="10" alt="Сравнить">
+            <button type="button">Сравнить</button>
+          </li>
+          <li class="basket">
+            <img class="basket-icon" src="img/cart.svg" width="12" height="12" alt="Корзина">
+            <button type="button">Корзина</button>
+          </li>
+        </ul>
+        <ul class="site-navigation">
+          <li class="catalog-goods">
+            <a href="catalog.html">Каталог товаров
+              <img class="catalog-goods-img" src="img/plus.svg" width="16" height="16" alt="Каталог товаров">
+            </a>
+          </li>
+          <li class="catalog-goods-one"><a href="#">Доставка</a></li>
+          <li class="catalog-goods-two"><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <div class="white-width"></div>
       </nav>
-
-      <div class="white-width">
-      </div>
     </header>
 
     <main class="container">
       <section class="features-list">
-
-        <h1 class="visually-hidden"> Магазин Device</h1> <!-- Скрытый заголовок, не будет отображаться на сайте class="visually-hidden" -->
-
-       <div class="slider"><img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи"> </div>
-
-       <div class="base-info">
-
-        <img src="img/01.svg" width="165" height="126" class="number" alt="1 Слайд">
-      
-      <h2 class="advertising">Делай селфи,<br> как Бен Стиллер!</h2> 
-        <div class="advertising-item"> 
+        <h1 class="visually-hidden"> Магазин Device</h1>
+        <div class="slider"><img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи"></div>
+        <div class="base-info">
+          <img src="img/01.svg" width="165" height="126" class="number" alt="1 Слайд">
+          <h2 class="advertising">Делай селфи,<br> как Бен Стиллер!</h2>
+          <div class="advertising-item">
           Самая длинная палка для селфи доступна в нашем магазине. <br>
-          Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+          Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</div>
+          <ul>
+            <li class="button-slider">
+              <a class="slider-button" href="#">
+                <span class="slider-text">Подробнее</span>
+              </a>
+            </li>
+           </ul>
+           <ul class="parameters">
+             <li>
+               <span class="parameters-description">8,5 м</span>
+               <span class="parameters-size">Длина палки</span>
+              </li>
+              <li>
+                <span class="parameters-description">5 кг</span>
+                <span class="parameters-size">Вес палки</span>
+              </li>
+              <li>
+                <span class="parameters-description">Карбон</span>
+                <span class="parameters-size">Материал</span>
+              </li>
+            </ul>
         </div>
-    
-        <ul>
-          <li class="button-slider">
-        <a class="slider-button" href="#">
-          <span class="slider-text">Подробнее</span>
-        </a>
-      </li>
-        </ul>
-        
-        
-        <ul class="parameters">
-          <li>
-            <span class="parameters-description">8,5 м</span>
-            <span class="parameters-size">Длина палки</span>
-          </li>
-          <li>
-            <span class="parameters-description">5 кг</span>
-            <span class="parameters-size">Вес палки</span>
-          </li>
-          <li>
-            <span class="parameters-description">Карбон</span>
-            <span class="parameters-size">Материал</span>
-          </li>
-        </ul>
-      </div>
       </section>
 
-  
-      <section class="category"> 
-          <ul class="list">
-            <li>
-              <a href="#">
-                <div class="category-background">
-              <img class="virtual-reality" src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность" >
+      <section class="category">
+        <h2 class="visually-hidden"> Магазин Device</h2>
+        <ul class="list">
+           <li>
+             <a href="#">
+               <div class="category-background">
+                 <img class="virtual-reality" src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
                 </div>
-              <span class="category-text">Виртуальная<br> реальность</span>
+                <span class="category-text">Виртуальная<br> реальность</span>
               </a>
             </li>
             <li class="popular-two">
               <a href="catalog.html">
                 <div class="category-background">
-              <img class="monopods" src="img/popular-2.svg" width="86" height="117" alt="Моноподы  для селфи" > 
+                  <img class="monopods" src="img/popular-2.svg" width="86" height="117" alt="Моноподы  для селфи" >
                 </div>
-              <span class="category-text">Моноподы<br> для селфи</span>
-            </a>
+                <span class="category-text">Моноподы<br> для селфи</span>
+              </a>
             </li>
             <li class="popular-three">
               <a href="#">
                 <div class="category-background">
-              <img class="action" src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
+                  <img class="action" src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">
                 </div>
-              <span class="category-text">Экшн-камеры</span>
-            </a>
+                <span class="category-text">Экшн-камеры</span>
+              </a>
             </li>
             <li class="popular-four">
               <a class="" href="#">
                 <div class="category-background">
-              <img class="fitness" src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
+                  <img class="fitness" src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">
                 </div>
-              <span class="category-text">Фитнес-браслеты</span>
-            </a>
+                <span class="category-text">Фитнес-браслеты</span>
+              </a>
             </li>
             <li class="popular-five">
               <a href="#">
                 <div class="category-background">
               <img class="clock" src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
                 </div>
-            <span class="category-text">Умные часы</span>
+                <span class="category-text">Умные часы</span>
               </a>
             </li>
             <li class="popular-six">
               <a href="#">
                 <div class="category-background">
-              <img class="quadcopters" src="img/poppular-6.svg" width="132" height="69" alt="Квадрокоптеры">
+                  <img class="quadcopters" src="img/poppular-6.svg" width="132" height="69" alt="Квадрокоптеры">
                 </div>
-            <span class="category-text">Квадрокоптеры</span>
+                <span class="category-text">Квадрокоптеры</span>
               </a>
             </li>
           </ul>
-        </section>
-      
+      </section>
 
-        <h2 class="visually-hidden">Возможности</h2> <!-- Скрытый заголовок, не будет отображаться на сайте class="visually-hidden" -->
-       <div class="opportunities">
-        <section class="opportunities-one">
+       <section>
+        <h2 class="visually-hidden">Возможности</h2>
+        <div class="opportunities">
+        <div class="opportunities-one">
           <ul class="options">
            <li class="one-delivery">
              <a class="delivery" href="#">
                <span class="opportunities-button-delivery">Доставка</span>
-               </a>
-           </li>
-           <li class="one-guarantee">
-             <a class="guarantee" href="#">
-               <span class="opportunities-button-guarantee">Гарантия</span>
-             </a></li>
-           <li class="one-credit">
-             <a class="credit" href="#">
-               <span class="opportunities-button-credit">Кредит</span>
+              </a>
+            </li>
+            <li class="one-guarantee">
+              <a class="guarantee" href="#">
+                <span class="opportunities-button-guarantee">Гарантия</span>
+              </a>
+            </li>
+            <li class="one-credit">
+              <a class="credit" href="#">
+                <span class="opportunities-button-credit">Кредит</span>
               </a>
             </li>
           </ul>
           <div class="black-with"></div>
           <div class="opportunities-delivery">
-          <article>
-            <h2>Доставка</h2>
-          <p class="opportunities-delivery-text">
-            Мы с удовольствием доставим ваш товар прямо к вашему<br> 
-            подъезду совершенно бесплатно! Ведь мы неплохо<br> 
-            заработаем, поднимая его на ваш этаж.
-          </p>
-        </article>
-        <div class="people">
-          <img src="img/people.png" width="138" height="164" alt="Доставка">
+            <article>
+              <h2>Доставка</h2>
+              <p class="opportunities-delivery-text">
+            Мы с удовольствием доставим ваш товар прямо к вашему<br>
+            подъезду совершенно бесплатно! Ведь мы неплохо<br>
+            заработаем, поднимая его на ваш этаж.</p>
+          </article>
+          <div class="people">
+            <img src="img/people.png" width="138" height="164" alt="Доставка">
+          </div>
+          </div>
         </div>
       </div>
-        </section>
-        </div>
-      
-
-
-        <h2 class="visually-hidden">Наша компания сотрудничает</h2> <!-- Скрытый заголовок, не будет отображаться на сайте class="visually-hidden" -->
+      </section>
 
         <section>
+          <h2 class="visually-hidden">Наша компания сотрудничает</h2>
           <ul class="partners">
             <li class=""> <!-- Как потом их переключать на цветные? -->
               <a><img src="img/logo-1.jpg" width="260" height="100" alt="Логотип компании «DJI»"></a>
@@ -202,78 +191,80 @@
             </li>
           </ul>
         </section>
-        
-      <h2 class="visually-hidden">Магазин «Device»</h2> <!-- Скрытый заголовок, не будет отображаться на сайте class="visually-hidden"-->
-       
+
+      <h2 class="visually-hidden">Магазин «Device»</h2>
       <section class="container-three">
         <div class="black-small"></div>
-       <div class="container-three-one">
-        <h2>О нас</h2>
-            <p class="container-three-text">
-              Огромный выбор гаджетов не оставит равнодушным гика,<br> 
-              который есть в каждом из нас.
-            </p>
-            <p class="container-three-text-two">
-              Мы можем доставить ваш товар в самые отдаленные точки<br>
-              России! DEVICE работает со многими транспортными компаниями:
-            </p>
-        <ul class="ways-send">
-          <li> <img src="img/Oval.png" width="8" height="8" alt="Первый пункт" class="oval"> 
-            <a href="#">Деловые Линии</a>
-          </li> <!-- кружочки css-->
-          <li> <img src="img/Oval.png" width="8" height="8" alt="Второй пункт" class="oval"> 
-            <a href="#">Автотрейдинг</a></li>
-          <li> <img src="img/Oval.png" width="8" height="8" alt="Третий пункт" class="oval"> 
-            <a href="#">ЖелДорЭкспедиция</a></li>
-        </ul>
-        <ul>
-          <li class="button-slider-one">
-          <a class="button-slider-button" href="#">
-            <span class="slider-button-text">Подробнее о нас</span>
-          </a>
-        </li>
-        </ul>
-    </div>
-      
-      
-  
-    <div class="contacts">
-      <article>
-        <div class="black-small-two"></div>
-        <div class="contacts-block">
-        <h2>Контакты</h2>
-         <p>
-          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
-          проверить работоспособность покупки. Всякое бывает.
-         </p>
-         </article>
-         <figure>
-          <a href="#">
-            <img src="img/map.png" width="560" height="222" class="contacts-map" alt="Мы находимя по адресу">
-          </a>
-        </figure>
-        <ul>
-          <li class="button-slider-one">
-          <a class="button-slider-button" href="#">
-            <span class="slider-button-text">Напишите нам</span>
-          </a>
-        </li>
-        </ul>
-    </div>
-      </article>
+        <div class="container-three-one">
+          <h2>О нас</h2>
+          <p class="container-three-text">
+            Огромный выбор гаджетов не оставит равнодушным гика,<br>
+            который есть в каждом из нас.
+          </p>
+          <p class="container-three-text-two">
+            Мы можем доставить ваш товар в самые отдаленные точки<br>
+            России! DEVICE работает со многими транспортными компаниями:
+          </p>
+          <ul class="ways-send">
+            <li>
+              <img src="img/Oval.png" width="8" height="8" alt="Первый пункт" class="oval">
+              <a href="#">Деловые Линии</a>
+            </li> <!-- кружочки css-->
+            <li>
+              <img src="img/Oval.png" width="8" height="8" alt="Второй пункт" class="oval">
+              <a href="#">Автотрейдинг</a>
+            </li>
+            <li>
+              <img src="img/Oval.png" width="8" height="8" alt="Третий пункт" class="oval">
+              <a href="#">ЖелДорЭкспедиция</a>
+            </li>
+          </ul>
+          <ul>
+            <li class="button-slider-one">
+              <a class="button-slider-button" href="#">
+                <span class="slider-button-text">Подробнее о нас</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contacts">
+          <article>
+            <div class="black-small-two"></div>
+            <div class="contacts-block">
+              <h2>Контакты</h2>
+              <p>
+                Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
+                проверить работоспособность покупки. Всякое бывает.
+              </p>
+            </div>
+          </article>
+          <figure>
+            <a href="#">
+              <img src="img/map.png" width="560" height="222" class="contacts-map" alt="Мы находимя по адресу">
+            </a>
+          </figure>
+          <ul>
+            <li class="button-slider-one">
+              <a class="button-slider-button" href="#">
+                <span class="slider-button-text">Напишите нам</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
 
-
+<!---
       <section class="map">
         <p>
           <img src="img/map-popup.jpg" width="960" height="559" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </p>
         <div class="close">
-        <button type="button"><img src="img/modal-close.svg" width="55" height="55" alt="Закрыть карту"> 
+        <button type="button"><img src="img/modal-close.svg" width="55" height="55" alt="Закрыть карту">
         </button>
         </div>
       </section>
+
 
       <section class="record">
         <div class="record-all">
@@ -292,38 +283,39 @@
           <div class="user-text">
           <p>
             <label class="info-record" for="user-text">Текст письма:</label>
-            <textarea class="help-record info-record-four"  id="user-text" type="text" name="text" placeholder="В свободной форме"></textarea> 
-          </p> 
+            <textarea class="help-record info-record-four"  id="user-text" type="text" name="text" placeholder="В свободной форме"></textarea>
+          </p>
           </div>
           <button class="button-record slider-button" type="submit">
-            Отправить 
+            Отправить
           </button>
           <div class="close-two">
-            <button type="button"><img src="img/modal-close.svg" width="55" height="55" alt="Закрыть"> 
+            <button type="button"><img src="img/modal-close.svg" width="55" height="55" alt="Закрыть">
             </button>
             </div>
             </form>
             </div>
-      </section>    
-    </main> 
+      </section>
+      -->
+    </main>
 
        <footer class="main-footer">
          <div class="main-footer-one">
         <a>
           <img src="img/logo-yellow.png" width="164" height="36" alt="Логотип магазина «Device»">
         </a>
-        
+
         <ul class="footer-user-navigation">
           <li>
-            <img src="img/user-yellow.svg" width="13" height="12" alt="Войти">
+            <img class="enter-icon" src="img/user-yellow.svg" width="13" height="12" alt="Войти">
             <button type="button">Войти</button>
            </li>
            <li>
-            <img src="img/compare-yellow.svg" width="10" height="10" alt="Сравнить">
+            <img class="compare-icon" src="img/compare-yellow.svg" width="10" height="10" alt="Сравнить">
             <button type="button"> Сравнить</button>
            </li>
            <li>
-            <img src="img/cart-yellow.svg" width="12" height="12" alt="Корзина">
+            <img class="basket-icon" src="img/cart-yellow.svg" width="12" height="12" alt="Корзина">
             <button type="button">Корзина</button>
            </li>
          </ul>
@@ -331,7 +323,6 @@
 
          <div class="main-footer-two">
           <p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
-    
            <ul class="footer-site-navigation">
              <li><a href="#">Доставка</a></li>
              <li><a href="#">Гарантия</a></li>
@@ -341,15 +332,16 @@
             Тел.: +7 (495) 495-95-95
            </p>
           </div>
-  
+
           <div class="main-footer-three">
-            <div class="social-width"></div>
+            <span class="social-width"></span>
            <ul class="social">
             <li><a href="#"><img src="img/fb.svg" width="32" height="32" alt="Магазин Device в Фейсбуке"></a></li>
             <li><a href="#"><img src="img/instagram.svg" width="32" height="32" alt="Магазин Device в Инстаграм"></a></li>
             <li><a href="#"><img src="img/twitter.svg" width="32" height="32" alt="Магазин Device в Твиттер"></a></li>
-          </ul> 
+          </ul>
          <a href="#"><img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy" class="html-academy"></a>
          </div>
+         </footer>
     </body>
   </html>
