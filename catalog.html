@@ -7,7 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="grid">
     <header class="main-header--two">
       <nav class="main-nav">
         <div class="page-header__logo">
@@ -17,7 +17,7 @@
         </div>
 
         <div class="main-nav__wrapper">
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
             <input class="search-input" type="text" name="search" placeholder="Поиск по сайту" aria-label="Форма поиска по сайту" autocomplete="off">
             <button class="search-form-button hidden" type="submit">Найти</button>
           </form>
@@ -65,6 +65,21 @@
           </ul>
         </div>
       </nav>
+
+      <div class="header-popup-container hidden-container">
+        <ul class="header-popup-list">
+          <li class="header-popup-list-item"><a href="">Виртуальная реальность</a></li>
+          <li class="header-popup-list-item"><a href="">Моноподы для селфи</a></li>
+          <li class="header-popup-list-item"><a href="">Экшн-камеры</a></li>
+        </ul>
+        <ul class="header-popup-list">
+          <li class="header-popup-list-item"><a href="">Фитнес-браслеты</a></li>
+          <li class="header-popup-list-item"><a href="">Умные часы</a></li>
+        </ul>
+        <ul class="header-popup-list">
+          <li class="header-popup-list-item"><a href="">Квадрокоптер</a></li>
+        </ul>
+      </div>
     </header>
 
     <main class="page-main">
@@ -167,7 +182,7 @@
             </fieldset>
 
             <div class="text-list__button">
-              <a class="button text-button" href="">Показать</a>
+              <a class="button text-button" action="https://echo.htmlacademy.ru" type="submit">Показать</a>
             </div>
           </div>
         </div>
@@ -176,7 +191,12 @@
           <div class="image__catalog">
             <ul class="image__list">
               <li class="image__item">
-                <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                <img class="img-opacity" src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                <span class="new new-hidden">New</span>
+                <div class="image-button-container">
+                  <button class="button in-cart img-hidden" type="button">В корзину</button>
+                  <button class="button btn-compare img-hidden" type="button">Добавить к сравнению</button>
+                </div>
                 <div class="image__description">
                   <h3 class="image__title"><a href="#">Любительская селфи-палка</a></h3>
                   <span class="image__price">500 руб.</span>
@@ -184,6 +204,11 @@
               </li>
               <li class="image__item">
                 <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                <span class="new new-hidden">New</span>
+                <div class="image-button-container">
+                  <button class="button in-cart" type="button">В корзину</button>
+                  <button class="button btn-compare" type="button">Добавить к сравнению</button>
+                </div>
                 <div class="image__description">
                   <h3 class="image__title"><a href="#">Профессиональная<br> селфи-палка</a></h3>
                   <span class="image__price">1 500 руб.</span>
@@ -191,6 +216,11 @@
               </li>
               <li class="image__item">
                 <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                <span class="new new-hidden">New</span>
+                <div class="image-button-container">
+                  <button class="button in-cart" type="button">В корзину</button>
+                  <button class="button btn-compare" type="button">Добавить к сравнению</button>
+                </div>
                 <div class="image__description">
                   <span class="image__title"><a href="#">Непотопляемая селфи-палка</a></span>
                   <span class="image__price">2 500 руб.</span>
@@ -198,11 +228,15 @@
               </li>
               <li class="image__item">
                 <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                <span class="new">New</span>
+                <div class="image-button-container">
+                  <button class="button in-cart" type="button">В корзину</button>
+                  <button class="button btn-compare" type="button">Добавить к сравнению</button>
+                </div>
                 <div class="image__description">
                   <h3 class="image__title"><a href="#">Селфи-палка «Следуй за<br> мной»</a></h3>
                   <span class="image__price">4 900 руб.</span>
                 </div>
-                <span class="new">New</span>
               </li>
             </ul>
           </div>
@@ -275,37 +309,7 @@
         <a class="footer-bottom__academy inner-footer" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy" class="html-academy"></a>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
-
-
-
-       <!-- <div  class="catalog-menu">
-      <div class="catalog-menu-text">
-        <ul class="catalog-one menu-points">
-            <li>
-              <a href="#">Виртуальная реальность</a>
-            </li>
-            <li>
-              <a href="#">Моноподы для селфи</a>
-            </li>
-            <li>
-              <a href="#">Экшн-камеры</a>
-            </li>
-        </ul>
-        <ul class="catalog-two menu-points">
-          <li>
-            <a href="#">Фитнес-браслеты</a>
-          </li>
-          <li>
-            <a href="#">Умные часы</a>
-          </li>
-        </ul>
-        <ul class="catalog-three menu-points">
-          <li>
-            <a href="#">Квадрокоптеры</a>
-          </li>
-        </ul>
-        </div>
-      </div>
-    </header> -->

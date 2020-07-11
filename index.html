@@ -8,17 +8,17 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="grid">
     <header class="main-header">
       <div class="page-header__logo">
-        <a class="page-header__link inner-header-logo" href="index.html">
+        <a class="page-header__link inner-header-logo">
           <img src="img/logo.png" width="163" height="35" alt="Логотип магазина «Device»">
         </a>
       </div>
 
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
             <input class="search-input" type="text" name="search" placeholder="Поиск по сайту" aria-label="Форма поиска по сайту"
               autocomplete="off">
             <button class="search-form-button hidden" type="submit">Найти</button>
@@ -62,54 +62,122 @@
         </ul>
       </div>
       </nav>
+
+      <div class="header-popup-container hidden-container">
+        <ul class="header-popup-list">
+          <li class="header-popup-list-item"><a href="">Виртуальная реальность</a></li>
+          <li class="header-popup-list-item"><a href="">Моноподы для селфи</a></li>
+          <li class="header-popup-list-item"><a href="">Экшн-камеры</a></li>
+        </ul>
+        <ul class="header-popup-list">
+          <li class="header-popup-list-item"><a href="">Фитнес-браслеты</a></li>
+          <li class="header-popup-list-item"><a href="">Умные часы</a></li>
+        </ul>
+        <ul class="header-popup-list">
+          <li class="header-popup-list-item"><a href="">Квадрокоптер</a></li>
+        </ul>
+      </div>
     </header>
 
     <main class="page-main">
       <h1 class="visually-hidden">Магазин Device</h1>
 
-      <section class="features-list">
-        <div class="features-list__slider">
-          <img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
-        </div>
-        <img class="features-list__img" src="img/01.svg" width="165" height="126" alt="1 Слайд">
-        <div class="features-list__info">
-          <h2 class="features-list__info--title">Делай селфи,<br> как Бен Стиллер!</h2>
-          <p class="features-list__item">
-            Самая длинная палка для селфи доступна в нашем магазине.<br>
-            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-          </p>
-          <div class="features-list__button">
-            <a class="button slide-button" href="">Подробнее</a>
-          </div>
-          <ul class="features-list__parameters">
-            <li class="features-list__parameters--item">
-              <span class="parameters-description">8,5 м</span>
-              <span class="parameters-size">Длина палки</span>
-            </li>
-            <li class="features-list__parameters--item">
-              <span class="parameters-description">5 кг</span>
-              <span class="parameters-size">Вес палки</span>
-            </li>
-            <li class="features-list__parameters--item">
-              <span class="parameters-description">Карбон</span>
-              <span class="parameters-size">Материал</span>
-            </li>
-          </ul>
-          </div>
-
-
-          <!--переключение промо слайдов-->
-          <ul class="slider-navigation">
-            <li class="slider-navigation--item">
-              <button class="slider-navigation__button slider-navigation__current" type="button" aria-label="Перейти на первый слайд"></button>
-            </li>
-            <li class="slider-navigation--item">
-              <button class="slider-navigation__button" type="button" aria-label="Перейти на второй слайд"></button>
-            </li>
-            <li class="slider-navigation--item">
-              <button class="slider-navigation__button" type="button" aria-label="Перейти на третий слайд"></button>
-            </li>
-          </ul>
+      <section class="features">
+        <ul class="features-list">
+          <li class="features-item promo-slide" data-slide="slide-one">
+            <div class="features-list__slider">
+              <img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
+            </div>
+            <span class="slide-number">01</span>
+            <div class="features-list__info">
+              <h2 class="features-list__info--title">Делай селфи,<br> как Бен Стиллер!</h2>
+              <p class="features-list__item">
+                Самая длинная палка для селфи доступна в нашем магазине.<br>
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+              </p>
+              <div class="features-list__button">
+                <a class="button slide-button more" href="">Подробнее</a>
+              </div>
+              <ul class="features-list__parameters">
+                <li class="features-list__parameters--item">
+                  <span class="parameters-description">8,5 м</span>
+                  <span class="parameters-size">Длина палки</span>
+                </li>
+                <li class="features-list__parameters--item">
+                  <span class="parameters-description">5 кг</span>
+                  <span class="parameters-size">Вес палки</span>
+                </li>
+                <li class="features-list__parameters--item">
+                  <span class="parameters-description">Карбон</span>
+                  <span class="parameters-size">Материал</span>
+                </li>
+              </ul>
+              </div>
+              <div class="slider-navigation">
+                <button class="slider-navigation__button slider-navigation__current" type="button" aria-label="Первый слайд" data-slide="slide-one"></button>
+                <button class="slider-navigation__button"  type="button" aria-label="Второй слайд" data-slide="slide-two"></button>
+                <button class="slider-navigation__button"  type="button" aria-label="Третий слайд" data-slide="slide-three"></button>
+              </div>
+          </li>
+          <li class="features-item promo-slide slide" data-slide="slide-two">
+            <div class="features-list__slider-two">
+              <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
+            </div>
+            <span class="slide-number-two">02</span>
+            <div class="features-list__info">
+              <h2 class="features-list__info--title">Худеем<br> правильно!</h2>
+              <p class="features-list__item">
+                Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
+                не пропускать занятия и соблюдать диету.
+              </p>
+              <div class="features-list__button">
+                <a class="button slide-button more" href="">Подробнее</a>
+              </div>
+              <ul class="features-list__parameters">
+                <li class="features-list__parameters--item">
+                  <span class="parameters-description">48 часов</span>
+                  <span class="parameters-size">Без подзарядки</span>
+                </li>
+              </ul>
+              </div>
+              <div class="slider-navigation-two">
+                <button class="slider-navigation__button" type="button" aria-label="Первый слайд" data-slide="slide-one"></button>
+                <button class="slider-navigation__button slider-navigation__current"  type="button" aria-label="Второй слайд" data-slide="slide-two"></button>
+                <button class="slider-navigation__button"  type="button" aria-label="Третий слайд" data-slide="slide-three"></button>
+              </div>
+          </li>
+          <li class="features-item slide promo-slide" data-slide="slide-three">
+            <div class="features-list__slider-three">
+              <img src="img/slider-3.png" width="526" height="334" alt="Палка для селфи">
+            </div>
+            <span class="slide-number-three">03</span>
+            <div class="features-list__info">
+              <h2 class="features-list__info--title">Порхает как бабочка,<br> жалит как пчела!</h2>
+              <p class="features-list__item">
+                Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+                мощным лазером, замаскированным под стандартную камеру.
+              </p>
+              <div class="features-list__button">
+                <a class="button slide-button more" href="">Подробнее</a>
+              </div>
+              <ul class="features-list__parameters-three">
+                <li class="features-list__parameters--item">
+                  <span class="parameters-description">800 м</span>
+                  <span class="parameters-size">Дальность полета</span>
+                </li>
+                <li class="features-list__parameters--item">
+                  <span class="parameters-description">50 м</span>
+                  <span class="parameters-size">Радиус поражения</span>
+                </li>
+              </ul>
+              </div>
+              <div class="slider-navigation-three">
+                <button class="slider-navigation__button" type="button" aria-label="Первый слайд" data-slide="slide-one"></button>
+                <button class="slider-navigation__button"  type="button" aria-label="Второй слайд" data-slide="slide-two"></button>
+                <button class="slider-navigation__button slider-navigation__current"  type="button" aria-label="Третий слайд" data-slide="slide-three"></button>
+              </div>
+          <li>
+        </ul>
       </section>
 
       <section class="category">
@@ -172,30 +240,56 @@
           <div class="services__block">
             <ul class="services-list">
               <li class="services__item"><button class="button service-button active" type="button"
-                  data-slide="delivery">Доставка</button>
+                  data-slide="one">Доставка</button>
               </li>
               <li class="services__item"><button class="button service-button" type="button"
-                  data-slide="guarantee">Гарантия</button></li>
+                  data-slide="two">Гарантия</button></li>
               <li class="services__item"><button class="button service-button" type="button"
-                  data-slide="credit">Кредит</button></li>
+                  data-slide="three">Кредит</button></li>
             </ul>
 
-          <div class="black-with"></div>
-          <div class="service-slide service-slide-one" data-slide="one">
-            <article>
-              <h2 class="service-slide__title">Доставка</h2>
-              <p class="opportunities-delivery-text">
+            <div class="black-with"></div>
+
+            <div class="service-slide" data-slide="one">
+              <article>
+                <h2 class="service-slide__title">Доставка</h2>
+                <p class="opportunities-delivery-text">
                 Мы с удовольствием доставим ваш товар прямо к вашему
-                подъезду совершенно бесплатно! Ведь мы неплохо
-                заработаем, поднимая его на ваш этаж.
-              </p>
-            </article>
-            <div class="people">
-              <img src="img/people.png" width="138" height="164" alt="Доставка">
+                подъезду совершенно бесплатно! Ведь мы неплохо<br>
+                заработаем, поднимая его на ваш этаж. </p>
+              </article>
+              <div class="people">
+                <img src="img/people.png" width="138" height="164" alt="Доставка">
+              </div>
+            </div>
+
+            <div class="service-slide slide-hidden" data-slide="two">
+              <article>
+                <h2 class="service-slide__title">Гарантия</h2>
+                <p class="opportunities-delivery-text">
+                  Если из-за возгорания купленного у нас товара у вас сгорит дом —
+                  не переживайте, мы выдадим вам новый.<br>
+                  Товар, не дом, конечно же. </p>
+              </article>
+              <div class="guarantee">
+                <img src="img/guarantee.png" width="171" height="195" alt="Доставка">
+              </div>
+            </div>
+
+            <div class="service-slide slide-hidden" data-slide="three">
+              <article>
+                <h2 class="service-slide__title">Кредит</h2>
+                <p class="opportunities-delivery-text">
+                  Залезть в долговую яму стало проще! Кредитные консультанты
+                  подберут для вас наиболее выгодные<br>
+                  условия кредита. Выгодные для нашего банка, разумеется.
+                </p>
+              </article>
+              <div class="credit">
+                <img src="img/credit.png" width="156" height="188" alt="Доставка">
+              </div>
             </div>
           </div>
-          </div>
-        </div>
       </section>
 
       <section>
@@ -225,10 +319,10 @@
               <li class="delivery-item">
                 <a href="#">Деловые Линии</a>
               </li>
-              <li class="delivery-item">
+              <li class="delivery-item auto-trading">
                 <a href="#">Автотрейдинг</a>
               </li>
-              <li class="delivery-item">
+              <li class="delivery-item expedition">
                 <a href="#">ЖелДорЭкспедиция</a>
               </li>
             </ul>
@@ -303,41 +397,49 @@
       </div>
     </footer>
 
-   <!--модальные окна.-->
+     <!--модальные окна.-->
+
    <!-- <section class="modal">
     <h2 class="visually-hidden">Напишите нам</h2>
+    <button class="modal-close-one" type="button" aria-label="Закрыть">
+      <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55">
+        <path
+          d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z" />
+      </svg>
+    </button>
     <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
       <div class="modal__user">
-        <p>
+        <p class="modal-one">
           <label class="modal__info" for="user-name">Ваше имя:</label>
-          <input class="modal__input" id="user-name" type="text" name="user" placeholder="Имя Фамилия">
+          <input class="modal__input modal-window" id="user-name" type="text" name="user" placeholder="Имя Фамилия">
         </p>
-        <p>
+        <p class="modal-one">
           <label class="modal__info" for="user-email">Ваш e-mail:</label>
-          <input class="modal__input" id="user-email" type="email" name="email" placeholder="email@example.com">
+          <input class="modal__input modal-window" id="user-email" type="email" name="email" placeholder="email@example.com">
         </p>
-        <p>
+      </div>
+        <p class="modal-name">
           <label class="modal__info" for="user-text">Текст письма:</label>
-          <textarea class="modal__input"   id="user-letter" type="letter" name="letter" placeholder="В свободной форме"></textarea>
+          <textarea class="modal__input modal-textholder"   id="user-letter" type="letter" name="letter" placeholder="В свободной форме"></textarea>
         </p>
-      </div>
-      <button class="modal__button modal__button" type="submit">
-        Отправить
-      </button>
-      <div class="close-two">
-        <button type="button"><img src="img/modal-close.svg" width="55" height="55" alt="Закрыть"></button>
-      </div>
+        <button class="button modal__button" type="submit">
+          Отправить
+        </button>
     </form>
-  </section>
+  </section> -->
 
-  <section class="modal-map">
+  <section class="modal-map hidden-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473154!2d37.52742931538804!3d55.6870340045307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1571521899888!5m2!1sru!2sru" width="960" height="559" style="border:0;" allowfullscreen=""></iframe>
-    <img src="img/map-popup.jpg" width="960" height="559" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-    <button class="bitton-close" type="button" aria-label="Закрыть карту"></button>
+    <iframe src="https://yandex.ru/map-widget/v1/-/CKaa5F6q" width="960" height="559" allowfullscreen title="Магазин расположен по адресу улица Строителей 15"></iframe>
+    <button class="modal-close" type="button" aria-label="Закрыть">
+      <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55">
+        <path
+          d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z" />
+      </svg>
+    </button>
   </section>
 
-  <script src="js/popup.min.js"></script> -->
 
+  <script src="js/script.js"></script>
   </body>
 </html>
