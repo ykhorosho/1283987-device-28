@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="html" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
@@ -8,6 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="grid">
+    <div class="grid-center">
     <header class="main-header--two">
       <nav class="main-nav">
         <div class="page-header__logo">
@@ -81,9 +82,10 @@
         </ul>
       </div>
     </header>
+  </div>
 
     <main class="page-main">
-      <div class="page-main__container">
+      <div class="page-main__container grid-center">
         <h1 class="page-main__title">Моноподы для селфи</h1>
         <ul class="page-main__list">
           <li><a href="index.html">Главная</a><img class="page-main__arrow-one" src="img/nav-arrow.svg" width="5" height="8" alt="Дальше"></li>
@@ -92,37 +94,39 @@
         </ul>
       </div>
 
+
       <section class="blocks">
-        <div class="container">
-          <h2 class="visually-hidden">Фильтр товаров</h2>
-          <div class="filter">
-            <span class="filter__title">Фильтр:</span>
-          </div>
-        </div>
+          <div class="container">
+            <h2 class="visually-hidden hidden">Фильтр товаров</h2>
+            <div class="filter">
+              <span class="filter__title">Фильтр:</span>
+            </div>
 
-        <div>
-          <h2 class="visually-hidden">Изображения товаров</h2>
-          <div class="catalog__container">
-            <span class="catalog__title">Сортировка:</span>
-            <ul class="catalog__list">
-              <li class="catalog-item-current"><a class="catalog__item-button current" href="#">По цене</a></li>
-              <li class="catalog-item"><a class="catalog__item-button current" href="#">По типу</a></li>
-              <li class="catalog-item"><a class="catalog__item-button current" href="#">По популярности</a></li><!-- <img src="img/icon-up-down.svg" width="41" height="10" alt="Стрелочки вверх вниз"> -->
-            </ul>
-            <ul class="up-down__list">
-              <li class="up-down__item">
-                <a class="button-up" href="" aria-label="Переключение типа сортировки вверх"></a>
-              </li>
-              <li class="up-down__item">
-                <a class="button-down up-down-button" href="" aria-label="Переключение типа сортировки вниз"></a>
-              </li>
-            </ul>
+            <section class="sorting">
+              <h2 class="visually-hidden hidden">Изображения товаров</h2>
+              <div class="catalog__container">
+                <span class="catalog__title">Сортировка:</span>
+                <ul class="catalog__list">
+                  <li class="catalog-item-current"><a class="catalog__item-button current" href="#">По цене</a></li>
+                  <li class="catalog-item"><a class="catalog__item-button current" href="#">По типу</a></li>
+                  <li class="catalog-item"><a class="catalog__item-button current" href="#">По популярности</a></li><!-- <img src="img/icon-up-down.svg" width="41" height="10" alt="Стрелочки вверх вниз"> -->
+                </ul>
+                <ul class="up-down__list">
+                  <li class="up-down__item">
+                    <a class="button-up" href="" aria-label="Переключение типа сортировки вверх"></a>
+                  </li>
+                  <li class="up-down__item">
+                    <a class="button-down up-down-button" href="" aria-label="Переключение типа сортировки вниз"></a>
+                  </li>
+                </ul>
+              </div>
+            </section>
           </div>
+        </section>
 
-        </div>
-      </section>
 
       <section class="two-blocks">
+      <div class="container-two-grid">
         <div class="price">
           <div class="price__block">
             <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
@@ -139,7 +143,6 @@
                 </div>
                 <div class="stripe-two"></div>
               </div>
-            </form>
 
             <fieldset class="colors__fieldset">
               <legend class="colors__title">Цвет</legend>
@@ -182,10 +185,11 @@
             </fieldset>
 
             <div class="text-list__button">
-              <a class="button text-button" action="https://echo.htmlacademy.ru" type="submit">Показать</a>
+                <button class="button text-button" type="submit">Показать</button>
             </div>
-          </div>
+          </form>
         </div>
+      </div>
 
         <div class="image-blocks">
           <div class="image__catalog">
@@ -193,9 +197,9 @@
               <li class="image__item">
                 <img class="img-opacity" src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                 <span class="new new-hidden">New</span>
-                <div class="image-button-container">
-                  <button class="button in-cart img-hidden" type="button">В корзину</button>
-                  <button class="button btn-compare img-hidden" type="button">Добавить к сравнению</button>
+                <div class="image-button-container img-hidden">
+                  <button class="button in-cart" type="button">В корзину</button>
+                  <button class="button btn-compare" type="button">Добавить к сравнению</button>
                 </div>
                 <div class="image__description">
                   <h3 class="image__title"><a href="#">Любительская селфи-палка</a></h3>
@@ -203,9 +207,9 @@
                 </div>
               </li>
               <li class="image__item">
-                <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                <img class="img-opacity" src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                 <span class="new new-hidden">New</span>
-                <div class="image-button-container">
+                <div class="image-button-container img-hidden">
                   <button class="button in-cart" type="button">В корзину</button>
                   <button class="button btn-compare" type="button">Добавить к сравнению</button>
                 </div>
@@ -217,7 +221,7 @@
               <li class="image__item">
                 <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                 <span class="new new-hidden">New</span>
-                <div class="image-button-container">
+                <div class="image-button-container img-hidden">
                   <button class="button in-cart" type="button">В корзину</button>
                   <button class="button btn-compare" type="button">Добавить к сравнению</button>
                 </div>
@@ -229,7 +233,7 @@
               <li class="image__item">
                 <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                 <span class="new">New</span>
-                <div class="image-button-container">
+                <div class="image-button-container img-hidden">
                   <button class="button in-cart" type="button">В корзину</button>
                   <button class="button btn-compare" type="button">Добавить к сравнению</button>
                 </div>
@@ -241,7 +245,7 @@
             </ul>
           </div>
 
-          <div class="column">
+         <div class="column">
             <div class="page-container">
               <a class="page-button back">Назад</a>
               <ul class="page-container__list">
@@ -253,10 +257,13 @@
             </div>
           </div>
         </div>
+        </div>
       </section>
     </main>
+
     <footer class="main-footer">
-      <div class="footer-logo">
+      <div class="grid-center">
+      <div class="footer-logo-two">
         <a class="footer-logo__logo  inner-footer"><img src="img/logo-yellow.png" width="163" height="35" alt="Логотип магазина Device"></a>
         <div class="footer-links">
           <ul class="footer-links__navigation-two">
@@ -287,7 +294,7 @@
         </div>
       </div>
 
-      <div class="footer-middle">
+      <div class="footer-middle-two">
         <p class="footer-middle__contacts">
           г. Москва, ул. Строителей, 15
         </p>
@@ -299,7 +306,7 @@
         <a class="footer-contacts footer-telephone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       </div>
 
-      <div class="footer-bottom">
+       <div class="footer-bottom-two">
         <span class="footer-bottom__width"></span>
         <ul class="footer-bottom__social">
           <li><a class="footer-bottom-item" href="https://www.facebook.com"><img src="img/fb.svg" width="32" height="32" alt="Магазин Device в Фейсбуке"></a></li>
@@ -307,6 +314,7 @@
           <li><a class="footer-bottom-item"  href="https://www.twitter.com"><img src="img/twitter.svg" width="32" height="32" alt="Магазин Device в Твиттер"></a></li>
         </ul>
         <a class="footer-bottom__academy inner-footer" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy" class="html-academy"></a>
+      </div>
       </div>
     </footer>
 

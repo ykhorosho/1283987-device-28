@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="html" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
@@ -9,6 +9,7 @@
   </head>
 
   <body class="grid">
+    <div class="grid-center">
     <header class="main-header">
       <div class="page-header__logo">
         <a class="page-header__link inner-header-logo">
@@ -78,10 +79,12 @@
         </ul>
       </div>
     </header>
+  </div>
 
     <main class="page-main">
       <h1 class="visually-hidden">Магазин Device</h1>
 
+      <div class="grid-center">
       <section class="features">
         <ul class="features-list">
           <li class="features-item promo-slide" data-slide="slide-one">
@@ -179,7 +182,9 @@
           <li>
         </ul>
       </section>
+    </div>
 
+    <div class="grid-center">
       <section class="category">
         <h2 class="visually-hidden"> Магазин Device</h2>
         <ul class="category__list">
@@ -233,11 +238,12 @@
           </li>
         </ul>
       </section>
+    </div>
 
       <section class="services">
         <h2 class="visually-hidden">Возможности</h2>
         <div class="services__navigation">
-          <div class="services__block">
+          <div class="services__block grid-center">
             <ul class="services-list">
               <li class="services__item"><button class="button service-button active" type="button"
                   data-slide="one">Доставка</button>
@@ -290,9 +296,10 @@
               </div>
             </div>
           </div>
+          </div>
       </section>
 
-      <section>
+      <section class="grid-center">
         <h2 class="visually-hidden">Компании партнеры</h2>
         <div class="index-container partners-logo">
           <div class="image-partners-logo-one"></div>
@@ -302,6 +309,7 @@
         </div>
       </section>
 
+      <div class="grid-center">
       <section class="about">
         <div class="about__one">
           <div class="black-smal--one"></div>
@@ -345,9 +353,11 @@
           </div>
         </div>
       </section>
+    </div>
     </main>
 
     <footer class="main-footer">
+      <div class="grid-center">
       <div class="footer-logo">
         <a class="footer-logo__logo inner-footer"><img src="img/logo-yellow.png" width="163" height="35" alt="Логотип магазина Device"></a>
       <div class="footer-links">
@@ -395,11 +405,12 @@
         </ul>
         <a class="footer-bottom__academy inner-footer" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy" class="html-academy"></a>
       </div>
+      </div>
     </footer>
 
      <!--модальные окна.-->
 
-   <!-- <section class="modal">
+    <section class="modal hidden-modal">
     <h2 class="visually-hidden">Напишите нам</h2>
     <button class="modal-close-one" type="button" aria-label="Закрыть">
       <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55">
@@ -426,7 +437,7 @@
           Отправить
         </button>
     </form>
-  </section> -->
+  </section>
 
   <section class="modal-map hidden-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
